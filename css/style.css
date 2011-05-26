@@ -37,6 +37,14 @@ li {
   list-style-position: inside;
 }
 
+dd {
+  font-weight: bold;
+}
+
+dt {
+  padding: 10px 0 10px 50px;
+}
+
 a {
   text-decoration: none;
   color: #654654;
