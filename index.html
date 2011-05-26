@@ -1,23 +1,26 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="css/reset-min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/grid.css" type="text/css" />
-    <link href="css/jquery.mobile-1.0a3.min.css" />
-    <link href="css/jquery-mobile-960.min.css" />
-    <script src="js/jquery-1.5.min.js"></script>
-    <script src="js/jquery.mobile-1.0a3.min.js"></script>
-
+    <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <title>Food Hackers Picnic, July 2-4, 2011 San Francisco, CA</title>
- 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<!--     <link rel="stylesheet" type="text/css" href="css/reset-min.css"> -->
+
+<!--     <link rel="stylesheet" href="css/grid.css" type="text/css" /> -->
+<!--     <link href="css/jquery-mobile-960.min.css" /> -->
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.0a3.min.css" />
+<!--     <link rel="stylesheet" href="css/foodhacking.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.0a3.min.js"></script>
   </head>
   <body>
-    <div id="container" class="section container_12">
+    <div id="container" class="section container_12"  data-role="page" data-theme="c">
       <div name="top"></div>
+<!--
       <div id="navigation" class="grid_12">
-        <ul>
+        <ul data-role="listview" >
           <li><a href="#home">Home</a></li>
           <li><a href="#invitation">Invitation</a></li>
           <li><a href="#desires">Desires</a></li>
@@ -30,23 +33,29 @@
           <li><a href="#outcomes">Outcomes</a></li>
         </ul>
       </div>
+-->
+	<div data-role="header">
+      <h1>Food Hackers Picnic</h1>
+	</div><!-- /header -->
 
-      <fieldset id="home" name="home" class="section">
-        <h1>Food Hackers Picnic</h1>
-        <div class="callout">
-          <div class="detail">on Data Independence Day</div>
-          <div class="detail">July 2-4, 2011</div>
-          <div class="detail">San Francisco, CA</div>
-        </div>
-        <p>A weekend of cooking and coding, mapping and markets-
-        culiminating in a day-long picnic on Monday, July 4th.
-        </p>
-        <div class="jump"><a href="#top">Top</a></div>
-      </fieldset>
+ <div data-role="content">
+    <div id="home" name="home" class="section" data-role="collapsible" data-collapsed="false">
+      <h2>Food Hackers Picnic</h2>
+      <div class="callout">
+        <h3>DRAFT: THIS SITE IS NOT DONE</h3>
+        <div class="detail">On Data Independence Day Weekend</div>
+        <div class="detail">July 2-4, 2011</div>
+        <div class="detail">San Francisco, CA</div>
+      </div>
+      <p>A weekend of cooking and coding, mapping and markets-
+      culiminating in a day-long picnic on Monday, July 4th.
+      </p>
+    </div>
 
-    <fieldset id="invitation" name="invitation" class="section">
+
+    <div id="invitation" name="invitation" class="section" data-role="collapsible" data-collapsed="false">
       <h2>Invitation</h2>
-      <p>Calling All Food Hackers</p>   
+      <h3>Calling All Food Hackers</h3>   
       <p>Come to San Francisco!</p>
       <p> Food Hacking invites all Food Hackers to join us
         for an epic Food Hackers Picnic the first weekend of July.</p>
@@ -56,17 +65,17 @@
         <li> We will spawn food software sprints.</li>
         <li> We will have positive public food outcomes.</li>
       </ul>
-      <div class="callout grid_4">
-      <h3>What are you being invited to?</h3>
+      <div class="callout">
+      <h4>What are you being invited to?</h4>
       <p>A weekend of coordinated events, field trips, collaborative
       software development ("hacking"), and cooking. We want you
       to leave well fed, inspired, with new friends and feeling
       like you made the world a better place.</p>
       </div>
-      <div class="jump"><a href="#top">Top</a></div>
-    </fieldset>
+      <div class="jump" data-rel="back"><a href="#top">Top</a></div>
+    </div>
 
-    <fieldset id="desires" name="desires" class="section">
+    <div id="desires" name="desires" class="section" data-role="collapsible" data-collapsed="true">
       <h2>Desires</h2>
       <p>We are asking everyone who will come to
       <strong>SHARE THREE THINGS</strong>
@@ -74,11 +83,11 @@
       <div id="group_desires" class="callout">
       [Our Desires for this Event]
       </div>
-      <div class="jump"><a href="#top">Top</a></div>
-    </fieldset>
+      <div class="jump" data-rel="back"><a href="#top">Top</a></div>
+    </div>
 
 
-    <fieldset id="blends" class="section">
+    <div id="blends" class="section" data-role="collapsible" data-collapsed="true">
       <h2>Blends & Mixes</h2>
       <p>We are bringing the finest ingredients to this event, your heart and skills.</p>
       <p>Rather than making you wait until you get to the event to figure out
@@ -91,10 +100,10 @@
       <div id="group_desires" class="callout">
         [Ingredients Among Us]
       </div>
-      <div class="jump"><a href="#top">Top</a></div>
-    </fieldset>
+      <div class="jump" data-rel="back"><a href="#top">Top</a></div>
+    </div>
 
-    <fieldset id="event_details" name="event_details" class="section">
+    <div id="event_details" name="event_details" class="section" data-role="collapsible" data-collapsed="true">
       <h2>Event Details</h2>
       <div class="callout">
         <dl>
@@ -105,26 +114,25 @@
         </dl>
       </div>
       
-      <fieldset id="sign_up" class="subsection">
+      <div id="sign_up" class="subsection" data-role="collapsible" data-collapsed="true">
         <h3>Sign Up</h3> 
         <p>We are using an Event Signup form</p>
         <p></p><a href="http://eventbrite.com">Eventbrite (ADD LINK)</a></p>
         <p>If you have any trouble with EventBrite, please let us know.</p>
-      </fieldset>
-
-      <fieldset id="volunteer" class="subsection">
+      </div>
+      <div id="volunteer" class="subsection" data-role="collapsible" data-collapsed="true">
         <h3>Volunteer Signup</h3>
         <p>We will need volunteers to help make the event go smoothly.</p>
         <p>Volunteers get in free. Sign up to volunteer.</p>
-      </fieldset>
+      </div>
       
-      <fieldset id="mailing_list" class="subsection">
+      <div id="mailing_list" class="subsection" data-role="collapsible" data-collapsed="true">
         <h3> Mailing List</h3>
         <p>If you would like to be emailed with Food Hackers Picnic updates:</p>  
         <p>Traffic is very low and nothing bad will happen to your address.</p>
-      </fieldset>
+      </div>
       
-      <fieldset id="schedule" class="subsection">
+      <div id="schedule" class="subsection" data-role="collapsible" data-collapsed="true">
         <h3>Schedule</h3>
         
         <p>THIS IS A TENTATIVE SCHEDULE.</p>
@@ -132,13 +140,13 @@
         <p>This is the current [Google Calendar] which will shift a lot.</p>
         
         <div id="schedule_details">
-          <div id="friday" class="day">
+          <div id="friday" class="day" data-role="collapsible" data-collapsed="true">
             <h4>Friday July 1st</h4>
             <ul>
               <li>Pre-Event Party - Location TBD</li>
             </ul>
           </div>
-          <div id="saturday" class="day">          
+          <div id="saturday" class="day" data-role="collapsible" data-collapsed="true">          
           <h4>Saturday July 2nd</h4>
             <table>
               <tr> <td>8am</td>  <td>Sign In, Welcome, Breakfast</td> </tr>
@@ -151,7 +159,7 @@
             </table>
           </div>
  
-          <div id="sunday" class="day">          
+          <div id="sunday" class="day" data-role="collapsible" data-collapsed="true">          
           <h4>Sunday July 3rd</h4>
             <table>
               <tr> <td>8am</td>  <td>Welcome, Breakfast</td> </tr>
@@ -164,7 +172,7 @@
             </table>
           </div>
 
-          <div id="monday" class="day">          
+          <div id="monday" class="day" data-role="collapsible" data-collapsed="true">          
           <h4>Monday July 4th</h4>
             <table>
               <tr> <td>9am </td>  <td>Breakfast, Final Reportbacks</td> </tr>
@@ -172,10 +180,10 @@
             </table>
           </div>
         </div>
-        <div class="jump"><a href="#top">Top</a></div>
-      </fieldset>
+        <div class="jump" data-rel="back"><a href="#top">Top</a></div>
+      </div>
 
-      <fieldset id="tracks" name="tracks" class="subsection">
+      <div id="tracks" name="tracks" class="subsection" data-role="collapsible" data-collapsed="true">
         <h3>Tracks</h3>
           <h4>Outside Tracks</h4>
           <ul>
@@ -207,33 +215,34 @@
             <li>Something else! Suggest it! Let us know!</li>
             <li>I would like to sponsor this event.</li>
           </ul>
-        <div class="jump"><a href="#top">Top</a></div>
-      </fieldset>
+        <div class="jump" data-rel="back"><a href="#top">Top</a></div>
+      </div>
 
-      <fieldset id="logistics" name="logistics" class="subsection">
+      <div id="logistics" name="logistics" class="subsection" data-role="collapsible" data-collapsed="true">
         <h3>Logistics</h3>
         <h4>What to bring</h4> 
         <p>TBD</p>
-      </fieldset>
+      </div>
 
 
-      <fieldset id="maps" name="maps" class="subsection">
+      <div id="maps" name="maps" class="subsection" data-role="collapsible" data-collapsed="true">
         <h3>Maps</h3>
         <p>TBD</p>
         <p>[Map PDF of Event stuff all on one page before the event (for anything complicated)]</p>
-      </fieldset>
-      <div class="jump"><a href="#top">Top</a></div>
-    </fieldset>
+      </div>
+      <div class="jump" data-rel="back"><a href="#top">Top</a></div>
+    </div>
 
-    <fieldset id="stories" name="stories" class="section">
+    <div id="stories" name="stories" class="section" data-role="collapsible" data-collapsed="true">
       <h2>Stories</h2>
       <p>What did we do?</p>
       <p>[Stories, pictures, links to projects.]</p>
-      <div class="jump"><a href="#top">Top</a></div>
-    </fieldset>
+      <div class="jump" data-rel="back"><a href="#top">Top</a></div>
+    </div>
 
-    <fieldset id="people" name="people" class="section">
+    <div id="people" name="people" class="section" data-role="collapsible" data-collapsed="true">
       <h2>People</h2>
+        <div id="social_media" name="social_media" class="section" >
         <h3>Social Media</h3>
           <dl>
             <dd>Twitter</dd><dt></dt>
@@ -241,9 +250,9 @@
             <dd>Facebook</dd><dt></dt>
             <dd>Website</dd><dt></dt>
           </dl>
+        </div>
 
-
-      <div id="participants" name="participants" class="section">
+      <div id="participants" name="participants" class="section" >
         <h3>Participants</h3>
         <p></p>
       </div>
@@ -252,10 +261,10 @@
         <h3>Sponsors & Thank Yous</h3>
         <p></p>
       </div>
-      <div class="jump"><a href="#top">Top</a></div>
-    </fieldset>
+      <div class="jump" data-rel="back"><a href="#top">Top</a></div>
+    </div>
 
-    <fieldset id="faq" name="faq" class="section">
+    <div id="faq" name="faq" class="section" data-role="collapsible" data-collapsed="true">
       <h2>FAQ</h2>
         <div class="item">
           <h3>How Can You Help?</h3>
@@ -296,13 +305,13 @@
           
           <p>If you have ideas, or more questions, just drop us a line.</p>
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset id="about" name="about" class="section">
+      <div id="about" name="about" class="section" data-role="collapsible" data-collapsed="true">
         <h2>About</h2>
-      </fieldset>
+      </div>
   
-      <fieldset id="contact" name="contact" class="section">
+      <div id="contact" name="contact" class="section" data-role="collapsible" data-collapsed="true">
         <h2>Contact</h2>
         <h3>Send us Email</h3>
         <h3>Emergency Contacts during the event</h3>
@@ -315,13 +324,19 @@
           <p>Anselm Hook | Email | Social | Have | Share | Role</p>
           <p>(Rachel) | Email | Social | Have | Share | Role</p>
           <p>(Zoey) | Email | Social | Have | Share | Role</p>
-      </fieldset>
+      </div>
   
-      <fieldset id="outcomes" name="outcomes" class="section">
-        <h2>..And then what happened? (Outcomes)</h2>
-        <p></p>
-      </fieldset>
+      <div id="outcomes" name="outcomes" class="section" data-role="collapsible" data-collapsed="true">
+        <h2>Outcomes</h2>
+        <p>... and then what happened?</p>
+      </div>
 
     </div>
+
+
+    <div data-role="footer" class="section">
+      <p>July 2-4, 2011</p>
+    </div>
+  </div>
   </div>
 </html>
