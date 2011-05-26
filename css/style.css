@@ -32,7 +32,7 @@ ul {
 
 li {
   margin: 0 0 15px 0;
-  list-style: disc;
+/*   list-style: disc; */
   list-style-position: inside;
 }
 
