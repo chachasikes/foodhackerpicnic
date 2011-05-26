@@ -4,26 +4,27 @@ body {
   font-size: 14px;
 }
 h1 {
-  font-size: 300%;
+  font-size: 200%;
 
   margin: 0 0 15px 0;
 }
 h2 {
-  font-size: 240%;
+  font-size: 150%;
 
   margin: 0 0 15px 0;
 }
 h3 {
-  font-size: 180%;
+  font-size: 110%;
   margin: 0 0 15px 0;
 }
 h4 {
-  font-size: 150%;
+  font-size: 100%;
   margin: 0 0 15px 0;
 }
 
 p {
   margin: 0 0 15px 0;
+  padding: 10px;
 }
 
 ul {
@@ -65,16 +66,17 @@ a:hover, a:active {
 }
 
 .section {
-  padding: 20px;
+/*   padding: 20px; */
 }
 
 .subsection {
-  padding: 20px;
+/*   padding: 20px; */
 }
 .callout {
   padding: 20px;
   margin: 10px 0 20px 0;
-  background: #e7e7e7;
+  background: #FFFFFF;
+  border: 1px solid #FF0068;
 }
 table {
   margin: 10px 0;
@@ -82,4 +84,13 @@ table {
 td {
   vertical-align: top;
   padding: 5px;
+}
+
+/* Mobile overrides */
+.ui-bar-c {
+background:-moz-linear-gradient(center top , #EA347F, #FF0068) repeat scroll 0 0 #BBBBBB;
+border:1px solid #CCCCCC;
+color:#333333;
+/* text-shadow:0 1px 0 #EEEEEE; */
+text-shadow: none;
 }
