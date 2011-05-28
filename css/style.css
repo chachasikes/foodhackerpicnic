@@ -84,9 +84,26 @@ a:hover, a:active {
 .callout {
   padding: 20px;
   margin: 10px 0 20px 0;
-  background: #FFFFFF;
-  border: 1px solid #FF0068;
+  background: #FFF;
+  border: 1px solid #D7E8CD;
 }
+
+.section img {
+
+}
+.logo {
+  background: url(../images/gingham.png) repeat-x;
+}
+.logo img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.logo h1 {
+  display: none;
+}
+
 table {
   margin: 10px 0;
 }
@@ -95,8 +112,8 @@ td {
   padding: 5px;
 }
 
-/* Mobile custom buttons */
 
+/* Mobile custom buttons */
 
 .ui-icon-food {
 	background-image: url(../images/food.png);
@@ -118,20 +135,21 @@ td {
   border: 1px solid #B3B3B3;
   color: #333;
   text-shadow: 0 1px 0 white;
-  background: #F0F0F0;
-  background-image: -moz-linear-gradient(top,#FFF,#EEE);
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FFF),color-stop(1,#EEE));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFF', EndColorStr='#EEE')";
+  background: #F2F2EB;
+  background-image: -moz-linear-gradient(top,#F2F2EB,#E8E6CD);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#F2F2EB),color-stop(1,#E8E6CD));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#F2F2EB', EndColorStr='#E8E6CD')";
 }
 
 .ui-bar-c {
-  background:-moz-linear-gradient(center top , #EA347F, #FF0068) repeat scroll 0 0 #FF0068;
-  border:1px solid #CCCCCC;
-  color:#333333;
-  /* text-shadow:0 1px 0 #EEEEEE; */
+  background: none;
+  background-color: #F5E76E;
+  border: none;
+  color:#000;
+  padding: 0;
+  margin: 0;
+  text-shadow:0 1px 0 #EEEEEE;
   text-shadow: none;  
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FF0068),color-stop(1,#FF0068));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF00680', EndColorStr='#FF0068')";
 }
 
 .ui-collapsible-content {
@@ -165,9 +183,9 @@ td {
 
 .ui-btn-up-c {
   border: none;
-  background: #EEE;
+  background: #509B29;
   font-weight: bold;
-  color: #444;
+  color: #FFF;
   cursor: pointer;
   text-shadow: none;
   text-decoration: none;
@@ -179,6 +197,10 @@ td {
   -ms-filter: none;
 }
 
+.subsection .ui-btn-up-c {
+  background: #A7DD85;
+}
+
 .ui-shadow {
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
@@ -187,10 +209,11 @@ td {
 
 .ui-btn-hover-c {
   border: none;
-  background:             #f5f5f5;
-  color:                  #222;
+  background: #509B29;
+  color: #FFF;
   background-image: none;
   -ms-filter: none;
+  text-shadow: none;
 }
 
 .ui-collapsible-contain {
